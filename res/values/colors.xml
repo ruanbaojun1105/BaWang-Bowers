@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="white">#FFFFFFFF</color>
+	<color name="transparency">#00000000</color>
+	<color name="blue">#00B2EE</color>
+	<color name="grey">#ABABAB</color>
+	<color name="red">#EE0000</color>
+	<color name="green">#71C671</color>
+	<color name="light_grey">#EBEBEB</color>
+	<color name="yellow">#D2F000</color>
+	<color name="littlegreen">#69A53C</color>
+	<color name="littlebule">#66cccc</color>
+	<color name="titlebg">#6699cc</color>
+	<color name="bg">#99cccc</color>
+	<color name="black">#000</color>
+	<color name="alp_g33">#33000000</color>
+	<color name="alp_g11">#11000000</color>
+</resources>

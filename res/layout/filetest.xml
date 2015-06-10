@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/file_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+  <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="1sp"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_alignTop="@+id/menuhome"
+            android:layout_centerHorizontal="true"
+            android:background="@color/blue"
+            android:text="TextView" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/backlistfile"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:listSelector="#11000000"
+        android:padding="1sp" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/backlistfile"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/alpha_a"
+        android:gravity="center"
+        android:hint="hi~"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/textViewline"
+        android:layout_width="fill_parent"
+        android:layout_height="1sp"
+        android:layout_alignBottom="@+id/listView"
+        android:layout_alignParentLeft="true"
+        android:background="@color/blue"
+        android:text="TextView" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#33000000"
+        >
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="文件管理"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/blue"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/backtohome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/touch_bg"
+            android:padding="1sp"
+            android:src="@drawable/icon_bar_back_normal" />
+    </RelativeLayout>
+
+</RelativeLayout>

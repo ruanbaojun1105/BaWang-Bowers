@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    
+   
+　　    <item android:state_focused="true">
+    	<shape>
+            <stroke android:dashGap="3dp" android:dashWidth="5dp" android:width="1dp" android:color="@color/white" />
+            <!-- 圆角 -->
+            <solid android:color="@color/alp_g33" />
+
+            <corners android:radius="5dp" />
+        </shape></item>
+    
+
+　　
+    <!-- 选中时的图片背景 -->
+
+
+
+　　    <item android:drawable="@color/alp_g11" android:state_selected="true"/>
+
+
+<!-- 默认时的背景图片 -->
+
+    <item><shape>
+            <corners android:radius="5dp" />
+			<solid 
+           	     android:color="@color/alp_g11"
+           	     />
+            <stroke android:dashGap="3dp" android:dashWidth="5dp" android:width="1dp" android:color="@color/blue" />
+        </shape></item>
+</selector>

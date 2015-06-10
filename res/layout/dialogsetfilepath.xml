@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10sp"
+   >
+   
+    <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="2sp"
+            android:layout_marginTop="10sp"
+            android:layout_alignTop="@+id/menuhome"
+            android:layout_centerHorizontal="true"
+            android:background="@color/blue"
+            android:text="TextView" />
+    <EditText
+        android:id="@+id/inputText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="直接输入要改的名字。默认创建在外置SD卡"
+        android:inputType="textMultiLine"
+        android:background="@drawable/alpha_a" >
+		
+    </EditText>
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="2sp"
+            android:layout_marginTop="10sp"
+            android:background="@color/blue"
+            android:text="TextView" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center"
+        android:layout_marginTop="20sp">
+
+        <Button
+            android:id="@+id/tureSet"
+            android:layout_width="80sp"
+            android:layout_height="40sp"
+            android:text="确定"
+            android:textSize="15sp"
+            android:background="@drawable/alpha_b" />
+
+        <Button
+            android:id="@+id/falseSet"
+            android:layout_width="80sp"
+            android:layout_height="40sp"
+            android:layout_marginLeft="100sp"
+            android:text="取消"
+            android:textSize="15sp"
+            android:background="@drawable/alpha_b" /> />
+
+    </LinearLayout>
+  
+</LinearLayout>

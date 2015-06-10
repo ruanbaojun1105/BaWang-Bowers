@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/setting_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/t2"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="#33000000"
+         >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="8dip"
+            android:text="设置"
+            android:textColor="@color/blue"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="1sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@color/blue"
+            android:text="TextView" />
+
+        <ImageButton
+            android:id="@+id/backtohome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/touch_bg"
+            android:padding="1sp"
+            android:src="@drawable/icon_bar_back_normal" />
+
+
+    </RelativeLayout>
+
+    <!-- 最外围的 -->
+
+    
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/t1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:weightSum="3" 
+            android:background="#11000000"
+            >
+
+            <ImageView
+                android:id="@+id/imagebg_look"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:background="@drawable/yangbg"
+                 />
+
+            <Button
+                android:id="@+id/set_pic"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/touch_bg"
+                android:gravity="center"
+                android:text="OK"
+                android:textColor="@color/blue"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/t1"
+        android:layout_below="@+id/t2"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:orientation="vertical"
+            android:background="#11000000"
+             >
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_gravity="left"
+                    android:padding="10dip"
+                    android:src="@drawable/tab_settings" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="40dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="40dip"
+                    android:gravity="left"
+                    android:textColor="@color/black"
+                    android:paddingTop="10dip"
+                    android:text="@string/support_javascript"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/settings_set_javascript_toggle_btn"
+                    android:layout_width="50dip"
+                    android:layout_height="30dip"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="6dip"
+                    android:layout_marginTop="6dip"
+                    android:checked="true" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" >
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_gravity="left"
+                    android:padding="10dip"
+                    android:src="@drawable/tab_settings" />
+
+                <TextView
+                    android:layout_width="200dip"
+                    android:layout_height="40dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="40dip"
+                    android:gravity="left"
+                    android:paddingTop="10dip"
+                    android:text="@string/support_zoom"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/settings_set_zoom_toggle_btn"
+                    android:layout_width="50dip"
+                    android:layout_height="40dip"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="6dip"
+                    android:layout_marginTop="6dip"
+                    android:checked="true" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" >
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_gravity="left"
+                    android:padding="10dip"
+                    android:src="@drawable/tab_settings" />
+
+                <TextView
+                    android:layout_width="200dip"
+                    android:layout_height="40dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="40dip"
+                    android:gravity="left"
+                    android:paddingTop="10dip"
+                    android:text="@string/support_picture"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/settings_set_picture_toggle_btn"
+                    android:layout_width="50dip"
+                    android:layout_height="30dip"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="6dip"
+                    android:layout_marginTop="6dip" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" >
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_gravity="left"
+                    android:padding="10dip"
+                    android:src="@drawable/tab_settings" />
+
+                <TextView
+                    android:layout_width="200dip"
+                    android:layout_height="40dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="40dip"
+                    android:gravity="left"
+                    android:paddingTop="10dip"
+                    android:text="背景duang一下"
+                    android:textColor="@color/blue"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/openblur"
+                    android:layout_width="50dip"
+                    android:layout_height="30dip"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="6dip"
+                    android:layout_marginTop="6dip"
+                    android:checked="true" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" >
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="fill_parent"
+            android:layout_height="1sp"
+            android:layout_marginTop="10sp"
+            android:background="@color/blue"
+            />
+
+        <ScrollView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:background="#11000000" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40sp"
+                android:orientation="horizontal" 
+                android:id="@+id/change_directory"
+                android:background="@drawable/touch_bg"
+                >
+
+                <ImageView
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_gravity="left"
+                    android:padding="10dip"
+                    android:src="@drawable/tab_settings" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="@string/change_saveDirectory"
+                    android:textSize="18sp"
+                    android:textStyle="bold" 
+                    android:textColor="@color/black"
+                    />
+
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40sp"
+                android:orientation="horizontal"
+                android:id="@+id/clear_data"
+                android:background="@drawable/touch_bg"
+                 >
+
+                <ImageView
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_gravity="left"
+                    android:padding="10dip"
+                    android:src="@drawable/tab_settings" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="清空记录"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                     />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" >
+            </LinearLayout>
+             <LinearLayout
+                android:background="@drawable/touch_bg"
+                android:layout_width="fill_parent"
+                android:layout_height="40sp"
+                android:orientation="horizontal" 
+                android:id="@+id/lightset"
+                >
+                 <ImageView
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_gravity="left"
+                    android:padding="10dip"
+                    android:src="@drawable/tab_settings" />
+                 
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="亮度调节"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/red"
+                     />
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_grey" >
+            </LinearLayout>
+            <LinearLayout
+                android:background="@drawable/touch_bg"
+                android:layout_width="fill_parent"
+                android:layout_height="40sp"
+                android:orientation="horizontal" 
+                android:id="@+id/openPic"
+                >
+                 <ImageView
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_gravity="left"
+                    android:padding="10dip"
+                    android:src="@drawable/tab_settings" />
+                 
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="自定义皮肤"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                     />
+                
+            </LinearLayout>
+        </LinearLayout>
+    
+    </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

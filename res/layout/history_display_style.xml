@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50sp"
+    android:layout_weight="0.55"
+    android:orientation="horizontal" 
+    >
+
+    
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/website_names"
+            android:layout_width="fill_parent"
+            android:layout_height="25sp"
+            android:singleLine="true"
+            android:text="website"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:textSize="17sp"
+            android:textStyle="bold"  />
+
+        <TextView
+            android:id="@+id/website_url"
+            android:layout_width="fill_parent"
+            android:layout_height="20sp"
+            android:gravity="center"
+            android:textColor="@color/littlebule"
+            android:text="URL"
+            android:textSize="12sp" 
+            android:marqueeRepeatLimit="marquee_forever"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            />
+    
+    </LinearLayout>
+
+</LinearLayout>

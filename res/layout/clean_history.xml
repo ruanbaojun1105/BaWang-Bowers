@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center" 
+    android:padding="3dp"
+    android:layout_margin="3dp"
+    >
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:gravity="center"
+		android:textColor="@color/red"
+        android:text="本设定将清空先前的设定记号.\n同时还原背景、下载的存储地址等其他的设定.\n如要清空网页浏览历史请至相关页面."
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="2sp"
+            android:layout_marginTop="10sp"
+            android:background="@color/blue"
+            />
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="2sp"
+            android:layout_marginTop="10sp"
+            android:layout_alignTop="@+id/menuhome"
+            android:layout_centerHorizontal="true"
+            android:background="@color/blue"
+            android:text="TextView" />
+    
+    <LinearLayout
+        android:layout_marginTop="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="80sp"
+            android:layout_height="40sp"
+            android:text="确定" 
+            android:textSize="15sp"
+            android:background="@drawable/alpha_b"/>
+
+        <Button
+            android:layout_marginLeft="100sp"
+            android:id="@+id/button2"
+            android:layout_width="80sp"
+            android:layout_height="40sp"
+            android:text="取消"
+            android:textSize="15sp"
+            android:background="@drawable/alpha_b" />
+
+    </LinearLayout>
+</LinearLayout>
